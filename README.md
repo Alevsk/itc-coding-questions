@@ -4,7 +4,7 @@ New Year Gift to every fellow time-constrained engineer out there looking for a 
 
 Good luck and Happy New Year!
 
-Array
+[Array](https://github.com/Alevsk/itc-coding-questions/tree/master/array)
 
 - Two Sum - https://leetcode.com/problems/two-sum/
 - Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
