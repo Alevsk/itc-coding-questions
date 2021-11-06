@@ -1,0 +1,39 @@
+class Solution {
+public:
+    int maxProduct(vector<int>& nums) {
+        int maxP = nums[0] < 0 ? 1 : nums[0];
+        int maxN = nums[0] > 0 ? 1 : nums[0];
+        int max = nums[0];
+        for(int x = 1; x < nums.size(); x++)
+        {
+            if(nums[x] == 0)
+            {
+                maxP = 1;
+                maxN = 1;
+                if(nums[x] > max)
+                    max = nums[x];
+            }
+            else
+            {
+                int a = nums[x] * maxP;
+                int b = nums[x] * maxN;
+                int iMax = maxInt(maxInt(a, b), nums[x]);
+                int iMin = minInt(minInt(a, b), nums[x]);
+                maxP = iMax > 0 ? iMax : 1;
+                maxN = iMin < 0 ? iMin : 1;
+                
+                if(iMax > max)
+                    max = iMax;
+            }
+        }
+        return max;
+    }
+    int maxInt(int a, int b)
+    {
+        return a > b ? a : b;
+    }
+    int minInt(int a, int b)
+    {
+        return a < b ? a : b;
+    }
+};
