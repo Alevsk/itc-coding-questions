@@ -9,8 +9,8 @@ A binary tree's *maximum depth* is the number of nodes along the longest path fr
 ## Example 1:
 
 ```
-		3
-	   / \	
+        3
+       / \  
       9   20
          /  \
         15   7   
