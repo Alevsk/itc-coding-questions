@@ -8,7 +8,7 @@ bool compareProjectsByCapital(const Project &a, const Project &b)
 }
 struct CompareProjects {
     bool operator()(const Project& a, const Project& b) {
-        return a.profit < b.profit; // sort in descending order
+        return a.profit < b.profit;
     }
 };
 class Solution {
